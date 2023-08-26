@@ -16,22 +16,47 @@ class Point:
         return ((self.x ** 2) + (self.y ** 2) + (self.z ** 2)) 
         print(self)
 
+
 Challenge 2: Implement a Calculator Class
 # In[6]:
-
-
-class Calculator:
-
-    def __init__(self):
-        pass
+class calculator():
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
     def add(self):
-        pass
+        return self.num1+self.num2
     def subtract(self):
-        pass
+        return self.num1-self.num2
     def multiply(self):
-        pass
+        return self.num1*self.num2
     def divide(self):
-        pass
+        return self.num1/self.num2
+   
+num1=int(input("Enter first number: "))
+num2=int(input("Enter second number: "))
+obj=calculator(num1,num2)
+choice=1
+while choice!=0:
+    print("0. Exit")
+    print("1. Add")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    choice=int(input("Enter choice: "))
+    if choice==1:
+        print("Result:---------->>>>>",obj.add())
+    elif choice==2:
+        print("Result:---------->>>>> ",obj.subtract())
+    elif choice==3:
+        print("Result:---------->>>>> ",obj.multiply())
+    elif choice==4:
+        print("Result:---------->>>>> ",obj.divide())
+    elif choice==0:
+        print("Exiting!")
+    else:
+        print("Invalid choice!!") 
+print()
+
 
 Challenge 3: Implement the Co
 mplete Student Class
