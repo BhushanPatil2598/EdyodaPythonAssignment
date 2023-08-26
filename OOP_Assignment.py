@@ -61,18 +61,35 @@ print()
 Challenge 3: Implement the Co
 mplete Student Class
 # In[7]:
-
-
 class Student:
+    def __init__(self, Name, RollNumber):
+        # private member
+        self.Name = Name
+        
+        self. RollNumber =  RollNumber
 
-    def setName(self):
-        pass
-    def getName(self):
-        pass
-    def setRollNumber(self):
-        pass
-    def getRollNumber(self):
-        pass
+    def show(self):
+        print('Student Details:', self.Name, self. RollNumber)
+
+    # getter methods
+    def get_RollNumber(self):
+        return self.RollNumber
+
+    # setter method 
+    def set_RollNumber(self, number):
+        if number > 50:
+            print('Invalid roll no. Please set correct roll number')
+        else:
+            self.RollNumber = RollNumber
+
+Bhushan = Student('Bhushan', 10, 15)
+Bhushan.show()
+# changing roll number using setter
+Bhushan.set_RollNumber(120)
+
+
+Bhushan.set_roll_no(25)
+Bhushan.show()
 
 Challenge 4: Implement a Banking Account
 # In[8]:
