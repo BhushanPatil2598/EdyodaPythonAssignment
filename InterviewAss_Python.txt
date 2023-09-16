@@ -1,0 +1,239 @@
+Q1. What is Python?
+
+    Python is an interpreted scripting language that is known for its power, interactivity, and object-oriented nature. It utilizes English keywords extensively and has a simpler syntax compared to many other programming languages.
+    Python is designed to be highly readable and compatible with different platforms such as Mac, Windows, Linux, Raspberry Pi, etc.
+
+=======================================================================================================
+Q2. What are Python Modules?
+
+Files containing Python codes are referred to as Python modules. This code can  be of different types like classes, functions, or variables. This saves the programmer’s time by providing predefined functionalities when needed. It is a file with “.py” extension containing an executable code.
+
+Commonly used built modules are listed below:
+
+    os
+    sys
+    data time
+    math
+    random
+    JSON
+=========================================================================================================
+
+Q3. What are python namespaces?
+
+A Python namespace ensures that the names assigned to objects within a program are unique and can be used without conflict. In Python, namespaces are implemented as dictionaries where the object’s name serves as the key and the object itself serves as the value.
+
+Let’s examine some examples of namespaces:
+
+    The Local Namespace is specific to a function and contains the names defined within that function. It is created temporarily when the function is called and is cleared once the function finishes executing.
+    The Global Namespace includes names from imported modules or packages that are used in the current project. It is created when the package is imported into the script and remains accessible throughout the script’s execution.
+    The Built-in Namespace comprises the built-in functions provided by Python’s core, as well as specific names dedicated to various types of exceptions.
+===========================================================================================================
+
+Q4.What is scope resolution?
+
+In Python, a scope defines the region of code where an object remains valid and accessible. Every object in Python operates within its designated scope. Namespaces are used to uniquely identify objects within a program, and each namespace is associated with a specific scope where objects can be used without any prefix. The scope of a variable determines its accessibility and lifespan.
+
+Let’s explore the different scopes created during code execution:
+
+    Local scope: This refers to the objects that are defined within the current function and are accessible only within that function.
+    Global scope: Objects in the global scope are available throughout the execution of the code. 
+    Module-level scope: This scope encompasses global objects that are associated with the current module in the program. These objects are accessible within the module.
+    Outermost scope: This refers to all the built-in names that can be called from anywhere in the program.
+
+=================================================================================================================
+
+Q5.What is a dictionary in Python?
+
+Python supports various data types, including dictionaries. A dictionary in Python is a collection of elements that are stored as key-value pairs. It is an unordered data structure, and the indexing is done based on the keys assigned to each element. Let’s consider an example: we have a dictionary named ‘dict’ with two keys, ‘Country’ and ‘Capital’, which have corresponding values ‘India’ and ‘New Delhi’, respectively.
+
+Syntax:
+
+dict={‘Country’:’India’,’Capital’:’New Delhi’, }
+
+Output: Country: India, Capital: New Delhi
+=======================================================================================================
+
+Q6.What are functions in Python?
+
+A function is a segment of code that runs only when it is called. The “def” keyword is utilized to define a specific function, as exemplified below:
+
+def my_function():
+    print("Hi, Welcome to Intellipaat")
+my_function()  
+
+Output:
+Hi, Welcome to Intellipaat
+==========================================================================================================
+
+
+Q7.What is __init__ in Python?
+
+In Python classes, the reserved method init serves a similar purpose as constructors in object-oriented programming (OOP) terminology. When a new object is created, the init method is automatically called, initializing the object and allocating memory for it. This method can also be utilized to set initial values for variables.
+
+Below is an example:
+
+class Human:
+    def __init__(self, age):
+        self.age = age
+    def say(self):
+        print('Hello, my age is', self.age)
+h = Human(22)
+h.say()
+
+Output:
+
+Hello, my age is 22
+============================================================================================================
+
+
+Q8.What are the common built-in data types in Python?
+
+Python supports the below-mentioned built-in data types:
+
+Immutable data types:
+
+    Number
+    String
+    Tuple
+
+Mutable data types:
+
+    List
+    Dictionary
+    set
+=========================================================================================================
+
+Q9.What are local variables and global variables in Python?
+
+A local variable is a variable that is defined within a specific function and is only accessible within that function. It cannot be accessed by other functions within the program.
+
+In contrast, a global variable is a variable that is declared outside of any function, allowing it to be accessed by all functions in the program
+
+g=4 #global variable
+def func_multiply():
+l=5 #local variable
+m=g*l
+return m
+func_multiply()
+
+Output: 20
+====================================================================================================
+
+Q10.What is type conversion in Python?
+
+Python offers a valuable feature that allows for the conversion of data types as needed. This process is referred to as type conversion in Python.
+
+Type conversion can be divided into two types:
+
+Implicit Type Conversion: This type of conversion is automatically performed by the Python interpreter without requiring any user intervention.
+
+Explicit Type Conversion: This type of conversion involves the user explicitly changing the data type to the desired type.
+
+Below are several functions for explicit type conversion:
+
+int(): This function converts any data type to an integer.
+
+float(): This function converts any data type to a float.
+
+ord(): This function returns an integer representing the Unicode character.
+
+hex(): This function converts integers to hexadecimal strings.
+
+oct(): This function converts integers to octal strings.
+
+tuple(): This function converts a value to a tuple.
+
+set(): This function returns the type after converting to a set.
+
+list(): This function converts any data type to a list.
+
+dict(): This function is used to convert a tuple of key-value pairs into a dictionary.
+
+str(): This function is used to convert an integer into a string.
+
+complex(real, imag): This function is used to convert real numbers to complex numbers in the form of complex(real, imag).
+    
+================================================================================================================
+
+Q11.What are the generators in python?
+
+Generators in Python are special functions that can be used to create iterable objects. Unlike regular functions that return a value and then terminate, generators use the yield keyword to suspend execution temporarily and yield a value one at a time. This makes generators memory efficient as they don’t generate the entire sequence of values upfront but rather generate values on-demand.
+
+Generators are helpful when dealing with large datasets or when the complete sequence of values is not needed at once. They allow us to iterate over a potentially infinite sequence without consuming excessive memory.
+=====================================================================================================================
+
+Q12.What are python iterators?
+
+Python iterators are objects that allow you to access elements of a collection one at a time. They use the __iter__() and __next__() methods to retrieve the next element until there are no more. Iterators are commonly used in for loops and can be created for custom objects. They promote efficient memory usage and enable lazy evaluation of elements. In summary, iterators provide a convenient way to iterate over data structures in a controlled and efficient manner.
+================================================================================================================
+
+Q13.Which conditional statements are available in Python ?
+
+Conditional statements are the programming statements which alter the course of execution based on a condition.
+
+Like other functional programming languages, Python has following conditional statements.
+
+    Python If
+    Python If-Else
+    Python For
+    Python While
+
+Conditional Statements are also called Control Statements.
+========================================================================================================
+
+Q14. Which looping statements are available in Python ?
+
+Looping statements are those which repeat the execution of a set of statements in a cyclic manner based on a condition.
+
+    Python For
+    Python While
+======================================================================================================
+
+Q15.What is the syntax for Python If statement ?
+
+Python If statement contains if keyword, condition followed by colon symbol (:), and then the statements of if block with indentation.
+if condition:
+    statement1
+    statement2
+    statementN
+======================================================================================================
+
+Q16.Give an example of Python Tuple ?
+
+Tuples are used to store values of different datatypes.
+tuple1 = ('Sarath', 'Varma', 1997, 'Kochi')
+tuple2 = (1, 2, 3, 4, 5 )
+
+Elements are separated by comma and are enclosed in parenthesis.
+=========================================================================================================
+
+Q17. What are the mutable builtin datatypes available ?
+
+Mutable datatype are those
+
+    List
+    Sets
+    Dictionaries
+=====================================================================================================
+
+Q18.What are the immutable builtin datatypes available ?
+
+Immutable datatypes are those
+
+    Strings
+    Tuples
+    Numbers
+==================================================================================================
+
+Q19. How to find substring of a string ?
+
+str[start_index:end_index] returns substring of a string, where
+
+    str is the main string
+    start_index is position of substring from which it starts in main string. If not provided, default value is 0.
+    end_index is the ending index of substring in the main string. If not provided, default value is length of the main string.
+============================================================================================================
+Q20. How to you initialize an array ?
+
+To initialize an array in Python use assignment operator (=) with values separated by comma and enclosed between square brackets.
+arr1 = [10, 20, 30, 40, 50]
